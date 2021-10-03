@@ -43,5 +43,10 @@ public class CallbackTest {
         driver = null;
     }
 
+    @Test
+    void shouldTestSomething() {
+        throw new UnsupportedOperationException();
+    }
+
 
 }

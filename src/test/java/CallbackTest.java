@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.util.Collection;
 import java.util.List;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -53,15 +52,6 @@ public class CallbackTest {
         driver.quit();
         driver = null;
     }
-
-    @Test
-    void test() {
-        // Exercise
-        driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
-        String title = driver.getTitle();
-
-    }
-
 
 
 }

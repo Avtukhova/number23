@@ -31,6 +31,11 @@ public class CallbackTest {
         driver = new ChromeDriver(options);
 
     }
+    @AfterEach
+    void tearDown() {
+        driver.quit();
+        driver = null;
+    }
 
      @Test
     void shouldTestV1() {
@@ -47,11 +52,6 @@ public class CallbackTest {
 
     }
 
-    @AfterEach
-    void tearDown() {
-        driver.quit();
-        driver = null;
-    }
 
 
 }

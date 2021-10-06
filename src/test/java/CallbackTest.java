@@ -45,7 +45,7 @@ public class CallbackTest {
         inputField.get(1).sendKeys("+79270000000");
         driver.findElement(By.className("checkbox__text")).click();
         driver.findElement(By.tagName("button")).click();
-        String actualMessage = driver.findElement(By.className("paragraph_theme_alfa-on-white")).getText();
+        String actualMessage = driver.findElement(By.cssSelector("[data-test-id='order-success']")).getText();
         String expectedMessage = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
         assertEquals(expectedMessage, actualMessage.trim());
 
